@@ -206,6 +206,24 @@ nav>div>a>img{
         width: 600px;
         height: 600px;
     }
+
+    #box>h3{
+        position: absolute;
+        color: white;
+        font-family: 'Kanit', sans-serif;
+        font-size: 70px;
+        top: -10%;
+        left: 5%;
+        transition: 0.5s;
+    }
+
+    #box>a{
+        font-size: 40px;
+    }
+
+    #box>p{
+        font-size: 40px;
+    }
   }
 
 @media only screen and (min-width: 1540px) {
@@ -253,5 +271,23 @@ nav>div>a>img{
     #box{
         width: 350px;
         height: 350px;
+    }
+
+    #box>h3{
+        position: absolute;
+        color: white;
+        font-family: 'Kanit', sans-serif;
+        font-size: 40px;
+        top: -10%;
+        left: 5%;
+        transition: 0.5s;
+    }
+
+    #box>a{
+        font-size: 20px;
+    }
+
+    #box>p{
+        font-size: 20px;
     }
   }
