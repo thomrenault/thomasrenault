@@ -1,0 +1,257 @@
+:root {
+    --bg: #242F40;
+    --color: #eee;
+    --font: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+    --bgg: #74D3AE;
+    --dg: #028090;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right, var(--bg), var(--dg));
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    user-select: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem 0;
+    filter: url('#goo');
+}
+
+.bouton {
+    display: inline-block;
+    text-align: center;
+    background: var(--color);
+    color: var(--bg);
+    font-weight: bold;
+    padding: 1em 1em 1em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 1.25rem;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: 2.1s;
+}
+
+.bouton+.bouton{
+    color: var(--dg);
+}
+
+.bouton+.bouton+.bouton{
+    color: var(--bg);
+}
+
+.bouton:before,
+.bouton:after {
+    width: 4.4em;
+    height: 2.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: var(--bgg);
+    border-radius: 50%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.bouton:before {
+    top: -25%;
+    left: 20%;
+    background: var(--bgg);
+}
+
+.bouton:after {
+    bottom: -25%;
+    right: 20%;
+    background: var(--bgg);
+}
+
+.bouton:hover:before,
+.bouton:hover:after {
+    transform: none;
+    background: var(--bgg);
+}
+
+.bouton:hover{
+    background: var(--bgg);
+    transition: 1s;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#box{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    border: solid;
+    border-color: white;
+    transition: 0.5s;
+}
+
+#box:hover>img {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    animation-name: example;
+    animation-duration: 0.25s;
+    border-left: 8px solid var(--bgg);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    width: 97.7%;
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+#box:hover>h3 {
+    color: var(--bg);
+    transition: 0.5s;
+}
+
+#box>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border-left: 0px solid white;
+    transition: 0.5s;
+}
+
+#box>h3{
+    position: absolute;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    top: -10%;
+    left: 5%;
+    transition: 0.5s;
+}
+
+#box>p{
+    display: none;
+    position: absolute;
+    color: var(--bg);
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    top: 20%;
+    left: 5%;
+    right: 5%;
+}
+
+#box>a{
+    display: none;
+    position: absolute;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    border: solid var(--bg);
+    background-color: var(--bg);
+    border-radius: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: fit-content;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+
+#box:hover>p{
+    display: block;
+    transition: 0.5s;
+}
+
+#box:hover>a{
+    display: inline;
+    transition: 0.5s;
+}
+
+nav>div>a>img{
+    width: 50px;
+    height: 50px;
+    margin-top: 100px;
+}
+
+/*Responsive*/
+@media screen and (orientation: portrait) {
+    .bouton {
+        padding: 1em 3em 1em;
+        margin-bottom: 35px;
+    }
+
+    #box{
+        width: 600px;
+        height: 600px;
+    }
+  }
+
+@media only screen and (min-width: 1540px) {
+    #box{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+  }
+
+@media only screen and (max-width: 720px) {
+    .menu {
+        flex-direction: column;
+    }
+    .bouton {
+        padding: 1em 10em 1em;
+        margin-bottom: 35px;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .bouton {
+        padding: 1em 7em 1em;
+        margin-bottom: 35px;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    nav>div>a>img{
+        display: none;
+    }
+  }
+
+  @media only screen and (min-height: 700px) and (max-width: 450px) {
+    .bouton {
+        padding: 1em 10em 1em;
+        margin-bottom: 35px;
+    }
+    #box{
+        width: 350px;
+        height: 350px;
+    }
+  }
+
+  @media only screen and (min-height: 700px) and (max-width: 800px) {
+    #box{
+        width: 350px;
+        height: 350px;
+    }
+  }

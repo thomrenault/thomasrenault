@@ -1,0 +1,43 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(23,55,83,1) 0%, rgba(215,38,56,1) 100%);
+}
+
+header p a{
+    border: solid;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-color: white;
+    color: white;
+    font-size: 23px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 0px;
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    transition-duration: 0.5s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+}
+
+header a:hover {
+    background-color: transparent;
+    color: white;
+
+    border-right: solid;
+    border-left: solid;
+    border-top: solid;
+}

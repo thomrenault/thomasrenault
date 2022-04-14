@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="bin/Contact.css" />
+    <script src="bin/GestionFond.js"></script>
+    <title>Thomas Renault</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="bin/goldo_2.png" />
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <div id="Haut_de_page"></div>
+    <header>
+        <div class="menu">
+            <a class="bouton" href="index.html">Acceuil</a>
+            <a class="bouton" href="Portfolio.html">Portfolio</a>
+            <a class="bouton" href="Contact.html">Contact</a>
+        </div>
+
+        <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+        <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+            version="1.1">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                        result="goo" />
+                    <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                </filter>
+            </defs>
+        </svg>
+    </header>
+    <main>
+        <div class="Bio">
+            <img src="bin/Photo_de_profil.jpg" alt="Photo de Profil">
+            <p align="justify">Bonjour, je m'appelle Thomas Renault et je suis étudiant en première année de BUT Informatique à l'IUT de
+                Bordeaux. Durant cette première année, j'ai acquis de nombreuses compétences, et je commence à maitriser plusieurs langages
+                tel que le Java, l'HTML, le CSS, le Bash ou encore le SQL. J'ai pu me familiariser avec plusieurs logiciel comme VS Code, 
+                NetBeans, Visual Studio 2022 ou encore Microsoft SQL Server. Si vous avez la moindre question ou pour toutes demandes autre,
+                n'hésiter pas à me contacter.
+            </p>
+        </div>
+    </main>
+    <footer>
+            <a href="mailto:thomasrenault23@gmail.com"><img src="bin/Logo@.png" alt="@"></img></a>
+            <a href="https://www.linkedin.com/in/thomas-renault-8816261ba/"><img src="bin/logoLinkedin.png" alt="Logo Linkedin"></a>
+            <a href="https://www.instagram.com/thomas.renault/?hl=fr"><img src="bin/logoInsta.png" alt="Logo Instagram"></a>
+            <a href="tel:0769219531"><img src="bin/LogoTel.png" alt="Logo téléphone"></a>
+    </footer>
+</body>
+
+</html>
+
+

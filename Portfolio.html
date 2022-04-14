@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <link rel="stylesheet" href="bin/Portfolio.css" />
+        <script src="bin/GestionFond.js"></script>
+        <title>Thomas Renault</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="bin/goldo_2.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <div id="Haut_de_page"></div>
+        <header>
+            <div class="menu">
+                <a class="bouton" href="index.html">Acceuil</a>
+                <a class="bouton" href="Portfolio.html">Portfolio</a>
+                <a class="bouton" href="Contact.html">Contact</a>
+            </div>
+    
+            <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+            <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                    <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                    </filter>
+                </defs>
+            </svg>
+        </header>
+        <main>
+            <div id="box">
+                <img src="bin/Pong.png" alt="Pong">
+                <h3>Pong</h3>
+                <p>Création d'un jeu pong en Java, sous Processing.</p>
+                <a href="Retex_Pong.pdf">Voir</a>
+            </div>
+            <div id="box">
+                <img src="bin/RoyalAirlinesCéation.png" alt="Création d'entreprise">
+                <h3>Royal Airlines (1)</h3>
+                <p>Création d'une entreprise fictive.</p>
+                <a href="Retex_Royal_Airlines(1).pdf">Voir</a>
+            </div>
+            <div id="box">
+                <img src="bin/MachineVirtuelle.png" alt="Machine Virtuelle">
+                <h3>BUTGames</h3>
+                <p>Programation d'une machine Virtuelle sous VMWare.</p>
+                <a href="Retex_BUTGames.pdf">Voir</a>
+            </div>
+            <div id="box">
+                <img src="bin/SiteWeb.png" alt="Site web">
+                <h3>Royal Airlines (2)</h3>
+                <p>Création d'un Site internet de l'entreprise que nous avons crée dans la première phase du projet.</p>
+                <a href="Retex_Royal_Airlines(2).pdf">Voir</a>
+            </div>
+            <div id="box">
+                <img src="bin/Lowatem.png" alt="Lowatem">
+                <h3>Lowatem</h3>
+                <p>Jeu de plateau dans lequel il a fallu dans un premier temps coder les règles du jeu puis crée une IA la plus efficace possile.</p>
+                <a href="Retex_Lowatem.pdf">Voir</a>
+            </div>
+            <div id="box">
+                <img src="bin/SQL.png" alt="SQL">
+                <h3>Graves & Cie</h3>
+                <p>Création d'une base de donées pour une entreprise de vin fictive.</p>
+                <a href="Retex_Graves&Cie.pdf">Voir</a>
+            </div>
+        </main>
+        <nav>
+            <div>
+                <a href="#Haut_de_page"><img src="bin/FelcheHaut.png" alt="Fleche Haut"></a>
+            </div>
+        </nav>
+    </body>
+</html>

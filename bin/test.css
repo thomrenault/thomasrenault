@@ -1,0 +1,255 @@
+:root {
+    --bg: #242F40;
+    --color: #eee;
+    --font: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+    --bgg: #74D3AE;
+    --dg: #028090;
+}
+
+img.Fond{
+    position: fixed; 
+    z-index: -1;
+    width : 100%; 
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+    pointer-events: none
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right, var(--bg), var(--dg));
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    user-select: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem 0;
+    filter: url('#goo');
+}
+
+.bouton {
+    display: inline-block;
+    text-align: center;
+    background: var(--color);
+    color: var(--dg);
+    font-weight: bold;
+    padding: 1em 1em 1em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 1.25rem;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: 2.1s;
+}
+
+.bouton+.bouton{
+    color: var(--bg);
+}
+
+.bouton:before,
+.bouton:after {
+    width: 4.4em;
+    height: 2.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: var(--bgg);
+    border-radius: 50%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.bouton:before {
+    top: -25%;
+    left: 20%;
+    background: var(--bgg);
+}
+
+.bouton:after {
+    bottom: -25%;
+    right: 20%;
+    background: var(--bgg);
+}
+
+.bouton:hover:before,
+.bouton:hover:after {
+    transform: none;
+    background: var(--bgg);
+}
+
+.bouton:hover{
+    background: var(--bgg);
+    transition: 1s;
+}
+
+h1{
+    color: white;
+    font-size: 200%;
+    margin-bottom: 0px;
+}
+
+h3{
+    font-size: 50%;
+    margin-top: 0px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 50%;
+    top: 50%;
+    color: white;
+    font-family: 'Train One', cursive;
+    font-size: 50px;
+}
+
+main>div{
+    display: flex;
+    position: fixed;
+    bottom: -5px;
+}
+
+main>div>a{
+    margin: 10px;
+}
+
+main div>a>img{
+    width: 40px;
+    height: 40px;
+    left: 10px;
+}
+
+main div>a:hover{
+    opacity: 0.8;
+}
+
+footer {
+    display: flex;
+    align-self: flex-start;
+    position: fixed;
+    bottom: -210px;
+    width: 100%;
+    z-index: -1;
+  }
+
+.left, .right {
+    border-top: 4px solid white ;
+    flex: 0 1 45.5%;
+  }
+  
+  .top {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .root {
+    width: 100%;
+    height: 250px;
+  }
+
+
+  /*Responsive*/
+
+  @media screen and (orientation: portrait) {
+    .bouton {
+        padding: 1em 3em 1em;
+        margin-bottom: 35px;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .left, .right {
+        flex: 0 1 43.5%;
+      }
+  }
+
+  @media screen and (max-width: 900px) {
+    .left, .right {
+        flex: 0 1 42.5%;
+      }
+  }
+
+  @media screen and (max-width: 900px) {
+    .left, .right {
+        flex: 0 1 40.5%;
+      }
+      h1{
+        font-size: 150%;
+      }
+      h3{
+        font-size: 37.5%;
+      }
+  }
+
+  @media screen and (max-width: 720px) {
+    .menu {
+        flex-direction: column;
+    }
+    .bouton {
+        padding: 1em 10em 1em;
+        margin-bottom: 35px;
+    }
+    h1{
+        font-size: 100%;
+    }
+    h3{
+        font-size: 25%;
+    }
+    .left, .right {
+        flex: 0 1 35.5%;
+      }
+  }
+
+  @media screen and (max-width: 600px) {
+    .bouton {
+        padding: 1em 7em 1em;
+        margin-bottom: 35px;
+    }
+  }
+
+  @media only screen and (max-height: 600px) {
+    main{
+        bottom: 40%;
+        top: 60%;
+    }
+  }
+
+  @media only screen and (max-height: 500px) {
+    main{
+        bottom: 30%;
+        top: 70%;
+    }
+  }
+
+  @media only screen and (max-height: 450px) {
+    h1{
+        display: none;
+    }
+    h3{
+        display: none;
+    }
+  } 
+
+  @media only screen and (min-height: 700px) and (max-width: 490px) {
+    .bouton {
+        padding: 1em 10em 1em;
+        margin-bottom: 35px;
+    }
+  }
+
+ 
