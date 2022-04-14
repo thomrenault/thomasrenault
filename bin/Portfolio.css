@@ -211,7 +211,7 @@ nav>div>a>img{
         position: absolute;
         color: white;
         font-family: 'Kanit', sans-serif;
-        font-size: 70px;
+        font-size: 60px;
         top: -10%;
         left: 5%;
         transition: 0.5s;
@@ -223,7 +223,7 @@ nav>div>a>img{
     }
 
     #box>p{
-        font-size: 35px;
+        font-size: 40px;
     }
   }
 
