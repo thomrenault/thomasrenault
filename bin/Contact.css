@@ -149,8 +149,9 @@ footer {
 
   @media screen and (orientation: portrait) {
     .bouton {
-        padding: 1em 3em 1em;
+        padding: 2em 1.5em 2em;
         margin-bottom: 35px;
+        font-size: 1.5rem;
     }
 
     footer {
@@ -178,6 +179,7 @@ footer {
     .bouton {
         padding: 1em 10em 1em;
         margin-bottom: 35px;
+        font-size: 1.25rem;
     }
 
     footer>a>img{
@@ -190,6 +192,7 @@ footer {
     .bouton {
         padding: 1em 7em 1em;
         margin-bottom: 35px;
+        font-size: 1.25rem;
     }
   }
 
@@ -197,6 +200,7 @@ footer {
     .bouton {
         padding: 1em 10em 1em;
         margin-bottom: 35px;
+        font-size: 1.25rem;
     }
   }
 
