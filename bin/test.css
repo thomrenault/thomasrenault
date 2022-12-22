@@ -6,6 +6,10 @@
     --dg: #028090;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 img.Fond{
     position: fixed; 
     z-index: -1;
