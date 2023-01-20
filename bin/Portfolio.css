@@ -163,6 +163,17 @@ main{
     right: 5%;
 }
 
+#Airbnb>p{
+    display: none;
+    position: absolute;
+    color: var(--bg);
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    top: 30%;
+    left: 5%;
+    right: 5%;
+}
+
 #box>a{
     display: none;
     position: absolute;
@@ -177,13 +188,43 @@ main{
     padding-left: 15px;
     padding-right: 15px;
     width: fit-content;
-    top: 75%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-decoration: none;
 }
 
+/*#java>p{
+    display: none;
+    position: absolute;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    border: solid var(--bg);
+    background-color: orange;
+    border-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: fit-content;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}*/
+
 #box:hover>p{
+    display: block;
+    transition: 0.5s;
+}
+
+#box:hover>#java>p{
+    display: block;
+    transition: 0.5s;
+}
+
+#box:hover>#Airbnb>p{
     display: block;
     transition: 0.5s;
 }
